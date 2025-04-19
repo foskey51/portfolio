@@ -1,9 +1,6 @@
 export const GitHubIcon = (props) => {
   return (
     <svg width="800px" height="800px" viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" {...props}>
-
-      <title>team-collaboration/version-control/github</title>
-      <desc>Created with Sketch.</desc>
       <defs>
       </defs>
       <g id="team-collaboration/version-control/github" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
