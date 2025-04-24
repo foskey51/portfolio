@@ -1,7 +1,7 @@
 const TechStack = () => {
     const language = ["Java", "JavaScript", "C", "C++", "Python", "Bash"];
     const dbServices = ["Postgresql", "MongoDB", "Docker", "MySql", "Postman", "Jenkins", "AWS"];
-    const frameworksOrLibs = ["Spring Boot", "React", "NextJS", "JPA"];
+    const frameworksOrLibs = ["Spring Boot", "React","React","React","React", "NextJS", "JPA"];
     const learning = ["Rust"];
 
     const renderArray = (props) => {

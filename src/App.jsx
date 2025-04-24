@@ -5,7 +5,6 @@ import useStore from '../store';
 
 const App = () => {
   const darkMode = useStore(state => state.darkMode);
-  const {setDarkMode} = useStore();
 
   useEffect(() => {
     if (darkMode) {
@@ -15,19 +14,10 @@ const App = () => {
     }
   }, [darkMode]);
 
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <div>
-      <div className='flex p-4 justify-center items-center'>
-        <button onClick={toggleDarkMode}>
-          {darkMode ? "Switch to Light" : "Switch to Dark"}
-        </button>
-      </div>
+    <div >
       <HomePage />
-    </div>
+    </div >
   );
 };
 
