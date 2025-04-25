@@ -52,7 +52,7 @@ const HeaderCard = () => {
                         <a className="text-slate-500 dark:text-gray-400 cursor-pointer" onClick={() => { window.open("https://www.github.com/foskey51") }}>@foskey51</a>
                     </div>
                     {/*DarkMode Toggle*/}
-                    <div onClick={toggleDarkMode} className="ml-auto mr-6 px-2 border-2 dark:text-white text-black rounded-lg border-gray-300 hover:border-amber-400 hover:shadow-[0_0_10px_2px_rgba(255,191,0,0.6)] transition-all duration-300">
+                    <div onClick={toggleDarkMode} className="cursor-pointer ml-auto mr-6 px-2 border-2 dark:text-white text-black rounded-lg border-gray-300 hover:border-amber-400 hover:shadow-[0_0_10px_2px_rgba(255,191,0,0.6)] transition-all duration-300">
                         <button onClick={toggleDarkMode}>{darkMode ? "0" : "1"}</button>
                     </div>
                 </div>

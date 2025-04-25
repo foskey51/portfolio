@@ -36,7 +36,7 @@ const Projects = () => {
               PROJECTS
             </span>
           </div>
-          <p className="mt-2 text-sm dark:text-gray-400 text-gray-400 max-w-md">
+          <p className="mt-2 text-sm dark:text-gray-400 text-gray-500 max-w-md">
             A list of my recent work, from experiments to real-world applications.
           </p>
         </div>
