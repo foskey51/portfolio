@@ -21,7 +21,7 @@ const HomePage = () => {
                 </div>
 
                 {/* Medium and large screens */}
-                <div className="hidden transition-all ease-in-out duration-500 md:grid grid-cols-6 grid-rows-6 gap-4 lg:px-[10%] 2xl:px-[15%] overflow-y-hidden overflow-x-hidden scale-[90%] h-screen w-screen">
+                <div className="hidden transition-all ease-in-out duration-500 md:grid grid-cols-6 grid-rows-6 gap-4 lg:px-[10%] 2xl:px-[20%] overflow-y-hidden overflow-x-hidden scale-[90%] h-screen w-screen">
 
                     <div className="col-span-4 row-span-2 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex items-center justify-center">
                         <HeaderCard />
