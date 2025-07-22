@@ -26,7 +26,7 @@ const ImageHolder = () => {
                     </div>
                 )}
                 <img
-                    className={`h-full w-full object-cover transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`h-full w-full object-fill transition-opacity duration-700 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
                     src={randomPic}
                     loading="lazy"
                     onLoad={() => setIsLoaded(true)}
