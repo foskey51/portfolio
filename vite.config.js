@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import viteCompression from "vite-plugin-compression"
 
 export default defineConfig({
-  base: "./portfolio",
+  base: "/portfolio",
   plugins: [react({
     babel: {
       plugins: ['babel-plugin-react-compiler'],
