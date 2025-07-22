@@ -1,13 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import HomePage from './pages/HomePage';
 import "./App.css";
 import useStore from '../store';
 
 const App = () => {
   const darkMode = useStore(state => state.darkMode);
+  const { setDarkMode } = useStore();
 
   useEffect(() => {
-    if (darkMode) {
+    if (darkMode === 'null') {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setDarkMode(prefersDark);
+    }
+  }, [darkMode, setDarkMode]);
+
+  useEffect(() => {
+    if (darkMode === true) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
@@ -15,9 +23,9 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <div >
+    <div>
       <HomePage />
-    </div >
+    </div>
   );
 };
 
