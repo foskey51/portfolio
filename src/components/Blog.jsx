@@ -2,7 +2,7 @@ import { CoffeeIcon } from "../utils/LogoIcon";
 
 const Blog = () => {
     return (
-        <div className="group flex flex-col w-[90%] mb-5 h-full px-2 py-6 items-center border rounded-lg bg-gradient-to-tr backdrop-blur-lg dark:from-white/15 dark:to-black/4 mx-auto shadow-md shadow-gray-400 dark:shadow-md dark:shadow-gray-400 dark:text-white text-black md:mb-0 md:h-full md:w-full md:px-0 md:pt-1 md:py-0 xl:py-2">
+        <div className="group flex flex-col w-[90%] justify-center mb-5 h-full px-2 py-6 items-center border rounded-lg bg-gradient-to-tr backdrop-blur-lg dark:from-white/15 dark:to-black/4 mx-auto shadow-md shadow-gray-400 dark:shadow-md dark:shadow-gray-400 dark:text-white text-black md:mb-0 md:h-full md:w-full md:px-0 md:pt-1 md:py-0 xl:py-2">
 
             <div className="flex justify-center items-center w-full space-x-3">
                 <h2 className="dark:text-gray-300 text-black font-extrabold text-4xl font-mono">
