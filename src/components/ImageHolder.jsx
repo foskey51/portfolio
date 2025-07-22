@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ClimbingBoxLoader } from 'react-spinners';
 
 const ImageHolder = () => {
     const images = {
@@ -11,7 +10,9 @@ const ImageHolder = () => {
         ]
     };
 
-    const seed = Math.floor(Math.random() * new Date().getSeconds());
+    const seedArray = new Uint32Array(1);
+    window.crypto.getRandomValues(seedArray);
+    const seed = seedArray[0];
     const randomIndex = seed % images.images.length;
     const randomPic = images.images[randomIndex];
 
@@ -22,7 +23,7 @@ const ImageHolder = () => {
             <div className="relative w-full h-full">
                 {!isLoaded && (
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <ClimbingBoxLoader size={18} color='dark:white black' />
+                        <a className='font-mono text-black dark:text-white'>Loading...</a>
                     </div>
                 )}
                 <img
