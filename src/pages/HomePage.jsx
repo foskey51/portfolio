@@ -2,8 +2,8 @@ import TechStack from "../components/TechStack";
 import HeaderCard from "../components/HeaderCard";
 import ContactLink from "../components/ContactLink";
 import Projects from "../components/Projects";
-import SpotifyHolder from "../components/SpotifyHolder";
 import Blog from "../components/Blog";
+import ImageHolder from "../components/ImageHolder";
 
 const HomePage = () => {
 
@@ -17,7 +17,7 @@ const HomePage = () => {
                     <TechStack />
                     <Blog />
                     <Projects />
-                    <SpotifyHolder />
+                    <ImageHolder />
                 </div>
 
                 {/* Medium and large screens */}
@@ -38,8 +38,8 @@ const HomePage = () => {
                     <div className="col-span-2 row-span-6 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-auto">
                         <Projects />
                     </div>
-                    <div className="col-span-2 row-span-3 bg-white border-gray-300 border-1 dark:bg-black rounded-lg flex flex-col overflow-hidden">
-                        <SpotifyHolder />
+                    <div className="col-span-2 row-span-3 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-auto">
+                        <ImageHolder />
                     </div>
                     <div className="col-span-2 row-span-3 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-hidden">
                         <Blog />
