@@ -4,6 +4,7 @@ import ContactLink from "../components/ContactLink";
 import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import ImageHolder from "../components/ImageHolder";
+import ResumeCard from "../components/ResumeCard";
 
 const HomePage = () => {
 
@@ -15,7 +16,7 @@ const HomePage = () => {
                     <HeaderCard />
                     <ContactLink />
                     <TechStack />
-                    <Blog />
+                    <ResumeCard />
                     <Projects />
                     <ImageHolder />
                 </div>
@@ -42,7 +43,7 @@ const HomePage = () => {
                         <ImageHolder />
                     </div>
                     <div className="col-span-2 row-span-3 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-hidden">
-                        <Blog />
+                        <ResumeCard />
                     </div>
                 </div>
             </div>
