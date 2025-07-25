@@ -3,25 +3,30 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "A minimal personal portfolio built with Next.js and Tailwind CSS.",
-    link: "https://github.com/yourgithub/portfolio",
+    title: "Sandbox",
+    description: "An online platform executing code in isolated Docker containers for 15+ languages with real-time terminal output.",
+    link: "https://github.com/foskey51/sandbox"
   },
   {
-    title: "Task Manager App",
-    description: "A simple, responsive task management tool using React and Firebase.",
-    link: "https://github.com/yourgithub/task-manager",
+    title: "Multi‑threaded web server",
+    description: "Custom HTTP server in Java using Project Loom virtual threads to handle high‑concurrency with minimal latency.",
+    link: "https://github.com/foskey51/http-server"
   },
   {
-    title: "Weather Dashboard",
-    description: "A weather forecast dashboard pulling data from OpenWeatherMap API.",
-    link: "https://github.com/yourgithub/weather-dashboard",
+    title: "Mint AI",
+    description: "React Native mobile app with streaming‑AI chat interface, Docker‑deployed backend, optimized for smooth UX.",
+    link: "https://github.com/foskey51/mint"
   },
   {
-    title: "Chat Application",
-    description: "A real-time chat application powered by Socket.io and Node.js.",
-    link: "https://github.com/yourgithub/chat-app",
+    title: "Browser terminal",
+    description: "Java example using JetBrains’ Pty4J to run pseudo‑terminal sessions via JNA across OSes.",
+    link: "https://github.com/foskey51/pty4j-example"
   },
+  {
+    title: "F1‑widget",
+    description: "Electron‑based desktop widget showing upcoming F1 race schedules with local time and circuit map.",
+    link: "https://github.com/foskey51/f1-widget"
+  }
 ];
 
 const Projects = () => {
@@ -45,7 +50,8 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group flex flex-col p-4 border dark:border-gray-700 border-gray-300 rounded-lg hover:scale-[1.03] transition-transform duration-300 ease-in-out"
+              onClick={() => { window.open(project.link) }}
+              className="group flex flex-col p-4 border dark:border-gray-700 border-gray-300 rounded-lg hover:scale-[1.03] transition-transform duration-300 ease-in-out hover:cursor-pointer"
             >
               <div className="flex items-center justify-between">
                 <h3 className="text-lg font-bold font-mono">{project.title}</h3>
