@@ -1,7 +1,7 @@
 import { DocumentTextIcon } from "@heroicons/react/24/solid";
 
 const ResumeCard = () => {
-    var link = "https://drive.google.com/drive/folders/1NUVD3r1q-AkabIaSafgvfl9xmJ0V8s0t";
+    var link = "https://drive.google.com/file/d/1i85e_RMHdBwn266nTHKHbJluvftbh-Bz";
 
     return (
         <div onClick={() => { window.open(link)}} className="group flex flex-col w-[90%] hover:cursor-pointer justify-center mb-5 h-full px-2 py-6 items-center border rounded-lg bg-gradient-to-tr backdrop-blur-lg dark:from-white/15 dark:to-black/4 mx-auto shadow-md shadow-gray-400 dark:shadow-md dark:shadow-gray-400 dark:text-white text-black md:mb-0 md:h-full md:w-full md:px-0 md:pt-1 md:py-0 xl:py-2">
