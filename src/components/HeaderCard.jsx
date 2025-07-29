@@ -47,7 +47,7 @@ const HeaderCard = () => {
                 <div className="flex items-center justify-between mt-3 ml-4">
                     <img
                         className="h-20 w-20 rounded-full"
-                        src="https://i.ibb.co/MDp0xC2H/profile.jpg"
+                        src="https://i.ibb.co/4w9zmwFn/176365353.jpg"
                         alt="Profile"
                     />
                     <div className="flex flex-col ml-4 dark:text-white text-black">
