@@ -12,7 +12,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@georapbox/theme-toggle-element": "^4.0.2",
     "@heroicons/react": "^2.2.0",
+    "@react-pdf-viewer/core": "^3.12.0",
+    "@react-pdf-viewer/default-layout": "^3.12.0",
+    "lucide-react": "^0.553.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",

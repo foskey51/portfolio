@@ -2,9 +2,8 @@ import TechStack from "../components/TechStack";
 import HeaderCard from "../components/HeaderCard";
 import ContactLink from "../components/ContactLink";
 import Projects from "../components/Projects";
-import Blog from "../components/Blog";
-import ImageHolder from "../components/ImageHolder";
 import ResumeCard from "../components/ResumeCard";
+import GitHubActivityCard from "../components/GithubActivityCard";
 
 const HomePage = () => {
 
@@ -18,7 +17,7 @@ const HomePage = () => {
                     <TechStack />
                     <ResumeCard />
                     <Projects />
-                    <ImageHolder />
+                    <GitHubActivityCard />
                 </div>
 
                 {/* Medium and large screens */}
@@ -40,7 +39,7 @@ const HomePage = () => {
                         <Projects />
                     </div>
                     <div className="col-span-2 row-span-3 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-auto">
-                        <ImageHolder />
+                        <GitHubActivityCard />
                     </div>
                     <div className="col-span-2 row-span-3 bg-white border-gray-300 border-2 dark:bg-black rounded-lg flex flex-col overflow-hidden">
                         <ResumeCard />

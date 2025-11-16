@@ -5,14 +5,6 @@ import useStore from '../store';
 
 const App = () => {
   const darkMode = useStore(state => state.darkMode);
-  const { setDarkMode } = useStore();
-
-  useEffect(() => {
-    if (darkMode === 'null') {
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      setDarkMode(prefersDark);
-    }
-  }, [darkMode, setDarkMode]);
 
   useEffect(() => {
     if (darkMode === true) {
